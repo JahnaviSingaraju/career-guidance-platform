@@ -1,0 +1,74 @@
+DOCUMENT: Computer Science Engineering (CSE) - Complete Career Guide
+
+=== CAREER PATHS ===
+
+1. SOFTWARE ENGINEER
+Role: Design, develop, test, and maintain software applications and systems.
+Skills Required: Python, Java, C++, Data Structures, Algorithms, OOP, Git, REST APIs, SQL.
+Top Companies: Google, Microsoft, Amazon, Flipkart, Swiggy, Zoho, Infosys, TCS, Wipro.
+Entry Salary: 4-25 LPA depending on company tier.
+Career Growth: Junior Dev -> Senior Dev -> Tech Lead -> Engineering Manager -> CTO.
+
+2. DATA SCIENTIST
+Role: Analyze large datasets, build predictive models, extract business insights.
+Skills Required: Python, R, Machine Learning, Statistics, SQL, Pandas, NumPy, Tableau, Power BI, Scikit-learn.
+Top Companies: Amazon, Flipkart, Walmart Labs, Mu Sigma, Fractal Analytics, LatentView, Tiger Analytics.
+Entry Salary: 6-18 LPA.
+Career Growth: Data Analyst -> Data Scientist -> Senior Data Scientist -> Lead -> Head of Data.
+
+3. AI / ML ENGINEER
+Role: Build and deploy machine learning models, develop AI-powered products.
+Skills Required: Python, TensorFlow, PyTorch, Deep Learning, NLP, Computer Vision, MLOps, Docker, FastAPI.
+Top Companies: Google DeepMind, Microsoft AI, OpenAI, NVIDIA, Sarvam AI, Krutrim, Juspay, Ola.
+Entry Salary: 8-20 LPA.
+Career Growth: ML Engineer -> Senior ML Engineer -> Research Scientist -> Principal Scientist.
+
+4. FULL STACK WEB DEVELOPER
+Role: Build complete web applications including frontend and backend.
+Skills Required: HTML, CSS, JavaScript, React, Node.js, MongoDB, Express, PostgreSQL, Docker.
+Top Companies: Razorpay, Zepto, Meesho, ShareChat, Postman, HashedIn, Thoughtworks.
+Entry Salary: 4-14 LPA.
+
+5. CLOUD ENGINEER / DEVOPS ENGINEER
+Role: Manage cloud infrastructure, CI/CD pipelines, deployment automation.
+Skills Required: AWS / Azure / GCP, Docker, Kubernetes, Terraform, Jenkins, Linux, Bash scripting.
+Top Companies: Amazon AWS, Microsoft Azure, Accenture Cloud, Capgemini, Deloitte, KPMG.
+Entry Salary: 6-18 LPA.
+
+6. CYBERSECURITY ENGINEER
+Role: Protect systems, networks, and data from cyber attacks.
+Skills Required: Networking, Ethical Hacking, Kali Linux, OWASP, Penetration Testing, Cryptography.
+Top Companies: Palo Alto Networks, Check Point, IBM Security, TCS CyberSecurity, Wipro CyberDefense.
+Entry Salary: 5-15 LPA.
+
+7. PRODUCT MANAGER (TECH)
+Role: Define product roadmap, coordinate between engineering and business.
+Skills Required: Analytical thinking, SQL, Wireframing (Figma), Agile/Scrum, Communication, User Research.
+Entry Salary: 8-20 LPA.
+Transition: Usually 2-3 years of software experience before moving to PM role.
+
+=== INTERNSHIP OPPORTUNITIES FOR CSE STUDENTS ===
+
+Best Platforms: Internshala, LinkedIn, AngelList, HackerEarth, Unstop, Dare2Compete.
+Government Internships: DRDO, ISRO, CDAC, NIC (National Informatics Centre), BARC.
+Stipend Range: 5,000 - 1,00,000 per month depending on company.
+
+How to Get Internships:
+- Build 3-5 GitHub projects before applying.
+- Solve 100+ LeetCode problems for tech interviews.
+- Apply in 4th or 5th semester for 6th semester internship.
+- Use LinkedIn to cold message recruiters.
+
+=== SKILL DEVELOPMENT ROADMAP FOR CSE ===
+
+Semester 1-2: C, C++, Python basics, Mathematics (Discrete Math, Linear Algebra).
+Semester 3-4: Data Structures, Algorithms, DBMS, Operating Systems, Computer Networks.
+Semester 5-6: Choose specialization - Web Dev / AI-ML / Cloud / Cybersecurity.
+Semester 7-8: Internship, final year project, placement preparation.
+
+Free Resources:
+- NPTEL courses (free with certificate option)
+- CS50 Harvard (free on edX)
+- freeCodeCamp (web development)
+- Kaggle Learn (data science)
+- LeetCode (DSA practice)

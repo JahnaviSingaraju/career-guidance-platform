@@ -1,0 +1,95 @@
+DOCUMENT: Electrical Engineering (EE) - Complete Career Guide
+
+=== CAREER PATHS ===
+
+1. POWER SYSTEMS ENGINEER
+Role: Design, analyze and maintain electrical power generation, transmission and distribution systems.
+Skills: Power systems analysis, ETAP software, AutoCAD Electrical, load flow analysis, fault analysis, protection systems.
+Top Companies: NTPC, NHPC, POWERGRID, BHEL, ABB, Siemens, Schneider Electric, state electricity boards.
+Entry Salary: 4-12 LPA.
+Government Jobs: NTPC, PGCIL, state DISCOMs through GATE score.
+
+2. ELECTRICAL DESIGN ENGINEER
+Role: Design electrical systems for buildings, plants, factories.
+Skills: AutoCAD Electrical, EPLAN, single line diagrams, panel design, motor sizing, cable sizing, NEC/IS standards.
+Top Companies: L&T, Siemens, ABB, Eaton, Schneider Electric, consulting firms.
+Entry Salary: 3-10 LPA.
+
+3. AUTOMATION AND CONTROL ENGINEER
+Role: Design and program automation systems for industries.
+Skills: PLC programming (Siemens S7, Allen Bradley), SCADA systems, HMI design, instrumentation, process control.
+Top Companies: Siemens, ABB, Honeywell, Emerson, Rockwell Automation, TATA AutoComp.
+Entry Salary: 4-12 LPA.
+
+4. RENEWABLE ENERGY ENGINEER
+Role: Design and develop solar, wind, and other renewable energy systems.
+Skills: Solar PV design, wind turbine systems, energy storage, grid integration, AutoCAD, PVsyst software.
+Top Companies: Adani Green Energy, Tata Power Solar, ReNew Power, NTPC Renewable, Greenko.
+Entry Salary: 4-12 LPA.
+This is a rapidly growing field in India with huge hiring.
+
+5. ELECTRICAL MAINTENANCE ENGINEER
+Role: Maintain electrical equipment in factories, plants, data centers.
+Skills: Electrical troubleshooting, transformer maintenance, switchgear operation, predictive maintenance.
+Companies: All manufacturing plants, pharma companies, food processing, steel plants.
+Entry Salary: 3-8 LPA.
+
+6. INSTRUMENTATION ENGINEER
+Role: Design and maintain measuring and control instruments in process industries.
+Skills: Sensors, transmitters, DCS systems, P&ID reading, calibration, instrumentation standards.
+Top Companies: ONGC, Reliance Industries, IOCL, Honeywell, Yokogawa.
+Entry Salary: 4-12 LPA.
+
+7. ELECTRICAL PROJECT ENGINEER
+Role: Execute electrical projects from planning to commissioning.
+Skills: Project management, MS Project, AutoCAD, knowledge of standards, vendor management.
+Companies: L&T, TATA Projects, Kalpataru Power, KEC International.
+Entry Salary: 4-10 LPA.
+
+=== GOVERNMENT JOBS FOR ELECTRICAL ENGINEERS ===
+
+PSU Recruitment through GATE:
+- NTPC (National Thermal Power Corporation): Power plant engineer. Salary: 45,000-70,000/month + perks.
+- BHEL (Bharat Heavy Electricals): Design and manufacturing. Salary: 40,000-65,000/month.
+- PGCIL (Power Grid Corporation): Transmission systems. Salary: 45,000-70,000/month.
+- NHPC (National Hydroelectric Power): Hydro power. Salary: 40,000-65,000/month.
+- CIL (Coal India): Mining electrical systems.
+- BEL (Bharat Electronics Limited): Electronics/Electrical systems.
+- NPCIL (Nuclear Power Corporation): Nuclear power plants.
+- THDC, SJVNL: Hydro power PSUs.
+
+State Government Jobs:
+- State Electricity Boards and DISCOMs.
+- State PWD electrical department.
+- Apply through state public service commissions.
+
+Central Government:
+- CPWD (Central Public Works Department) Junior Engineer.
+- Railway Electrical Department (via RRB exams).
+
+Engineering Services Examination (ESE/IES):
+- Conducted by UPSC for Group A engineering posts.
+- Very prestigious, leads to Class 1 officer level positions.
+- Salary: 56,100 + grade pay + allowances = effective 80,000-1,00,000+/month.
+
+=== GATE EXAM FOR ELECTRICAL ENGINEERS ===
+
+Key Topics: Power Systems, Electrical Machines, Control Systems, Signals and Systems, Circuit Theory, Electromagnetics, Power Electronics.
+Preparation Resources: Made Easy, ACE Engineering Academy, GATE Academy.
+Cutoff: General category typically 30-50 marks (out of 100) for PSU interviews.
+Timeline: Start preparation 6-12 months before exam date (usually February).
+
+=== SKILL ROADMAP ===
+
+Core: Circuit Analysis, Electrical Machines (transformers, motors, generators), Power Electronics, Control Systems.
+Software Tools: AutoCAD Electrical, ETAP, MATLAB/Simulink, EPLAN.
+Emerging Skills (add value): Basic PLC programming, Python for power systems automation, IoT for smart grid.
+Certifications: NPTEL courses in Power Systems, Electrical Machines, Control Systems.
+
+=== INTERNSHIP OPPORTUNITIES ===
+
+Government: NTPC, BHEL, PGCIL, NHPC, BEL, state electricity boards.
+Private: L&T, Siemens, ABB, Schneider Electric, Adani Power, Tata Power.
+Duration: 4-8 weeks.
+Stipend: 8,000-20,000/month.
+Tip: Get your basic lab skills right (transformer testing, motor testing). Companies test fundamentals in interviews.

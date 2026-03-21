@@ -1,0 +1,128 @@
+DOCUMENT: Cloud Computing and DevOps - Complete Career Guide
+
+=== JOB ROLES ===
+
+1. CLOUD ENGINEER
+Role: Design, build and manage cloud infrastructure on AWS/Azure/GCP.
+Skills: AWS or Azure or GCP (pick one, then learn others), Linux, Networking, Security, IAM, Terraform, Python/Bash scripting.
+Entry Salary: 6-18 LPA.
+Top Companies: Amazon AWS, Microsoft Azure, Google Cloud, Accenture, Capgemini, Deloitte, KPMG.
+
+2. DEVOPS ENGINEER
+Role: Automate software delivery pipelines, bridge gap between development and operations.
+Skills: Docker, Kubernetes, Jenkins, GitHub Actions, Terraform, Ansible, Linux, Python, monitoring tools.
+Entry Salary: 6-18 LPA.
+Top Companies: All product companies need DevOps - Swiggy, Zomato, Flipkart, Razorpay, CRED.
+
+3. SITE RELIABILITY ENGINEER (SRE)
+Role: Keep production systems reliable, fast, and scalable.
+Skills: Linux, Python, monitoring (Prometheus, Grafana), incident management, capacity planning.
+Entry Salary: 8-20 LPA.
+Companies: Google (invented SRE), Netflix, Uber, large fintech companies.
+
+4. CLOUD ARCHITECT
+Role: Design overall cloud strategy and architecture for enterprises.
+Requires: 5-8 years experience first. Deep knowledge of all cloud services, cost optimization.
+Salary: 20-50 LPA.
+
+5. KUBERNETES ENGINEER / PLATFORM ENGINEER
+Role: Manage Kubernetes clusters, build internal developer platforms.
+Skills: Kubernetes, Helm, ArgoCD, Istio, service mesh, platform engineering.
+Entry Salary: 8-20 LPA.
+
+=== SKILLS ROADMAP ===
+
+PHASE 1 - LINUX AND NETWORKING (1 month):
+- Linux: File system, user management, permissions, processes, networking commands.
+- Commands: grep, awk, sed, find, ssh, scp, curl, netstat, ps, top, df, du.
+- Networking: TCP/IP, DNS, HTTP, firewalls, VPC, subnets.
+- Scripting: Bash scripting for automation (loops, conditionals, functions).
+
+PHASE 2 - VERSION CONTROL AND CI/CD (1 month):
+- Git: Clone, commit, push, pull, branch, merge, rebase, resolve conflicts.
+- GitHub / GitLab / Bitbucket.
+- CI/CD: Jenkins, GitHub Actions, GitLab CI.
+- Build basic pipelines: code commit -> automated test -> build -> deploy.
+
+PHASE 3 - CONTAINERS (1-2 months):
+- Docker: Dockerfile, images, containers, volumes, networks, Docker Compose.
+- Practice: Containerize a Python Flask / Node.js application.
+- Container Registry: Docker Hub, AWS ECR.
+
+PHASE 4 - KUBERNETES (2-3 months):
+- Concepts: Pods, Deployments, Services, ConfigMaps, Secrets, Namespaces.
+- Operations: kubectl commands, scaling, rolling updates, health checks.
+- Advanced: Persistent Volumes, RBAC, Ingress controllers, Helm charts.
+- Practice: Use Minikube or Kind locally, or free tier on GKE.
+
+PHASE 5 - CLOUD PLATFORM (2-3 months):
+Choose one cloud provider to start:
+AWS (most widely used in India):
+  - Core services: EC2, S3, VPC, IAM, RDS, Lambda, ECS, EKS.
+  - Certification: AWS Solutions Architect Associate (most valuable cert).
+
+Azure (common in enterprise):
+  - Core services: Virtual Machines, Blob Storage, AKS, Azure Functions, AAD.
+  - Certification: AZ-900 (beginner) -> AZ-104 (associate) -> AZ-305 (expert).
+
+GCP (common at startups, Google products):
+  - Core services: GCE, GCS, GKE, Cloud Functions, BigQuery.
+  - Certification: Associate Cloud Engineer.
+
+PHASE 6 - INFRASTRUCTURE AS CODE (1-2 months):
+- Terraform: Write infrastructure as code. Provider for AWS/Azure/GCP.
+- Ansible: Configuration management, automate server setup.
+- Helm: Package manager for Kubernetes.
+
+PHASE 7 - MONITORING AND OBSERVABILITY (1 month):
+- Prometheus: Metrics collection.
+- Grafana: Dashboard and visualization.
+- ELK Stack: Elasticsearch, Logstash, Kibana for log management.
+- Distributed Tracing: Jaeger, Zipkin.
+
+=== CERTIFICATIONS ===
+
+AWS:
+- AWS Cloud Practitioner (CCP): Entry level, good for first certification.
+- AWS Solutions Architect Associate (SAA-C03): Most popular and valuable. Opens many job doors.
+- AWS Developer Associate: For developers working on cloud.
+- AWS DevOps Engineer Professional: Advanced certification.
+
+Azure:
+- AZ-900: Azure Fundamentals (entry level, free exam vouchers available).
+- AZ-104: Azure Administrator Associate.
+- AZ-400: Azure DevOps Engineer Expert.
+
+GCP:
+- Google Associate Cloud Engineer.
+- Google Professional Cloud Architect.
+
+DevOps/Platform:
+- Certified Kubernetes Administrator (CKA): Highly respected. Validates Kubernetes expertise.
+- Certified Kubernetes Application Developer (CKAD): For developers.
+- HashiCorp Terraform Associate.
+
+=== FREE LEARNING RESOURCES ===
+
+AWS:
+- AWS Free Tier: 12 months free access to 100+ services.
+- AWS Skill Builder: Official free courses.
+- Adrian Cantrill's courses (paid but worth it).
+- TutorialsDojo practice exams.
+
+Kubernetes:
+- Kubernetes official documentation.
+- KodeKloud: Interactive labs.
+- Linux Foundation free Kubernetes course on edX.
+
+General DevOps:
+- Roadmap.sh/devops: Visual roadmap.
+- TechWorld with Nana (YouTube): Best DevOps tutorials.
+- DevOps Bootcamp by TechWorld with Nana.
+
+=== SALARY RANGES IN INDIA ===
+Cloud/DevOps Fresher (0-1 year): 5-12 LPA.
+2-3 years experience: 12-25 LPA.
+5+ years (Senior/Lead): 20-40 LPA.
+Cloud Architect (8+ years): 30-60 LPA.
+Companies pay premium for: CKA, AWS SAA, Terraform certification holders.

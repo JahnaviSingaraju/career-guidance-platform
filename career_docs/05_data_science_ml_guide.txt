@@ -1,0 +1,118 @@
+DOCUMENT: Data Science and Machine Learning - Complete Career and Skills Guide
+
+=== WHAT IS DATA SCIENCE ===
+Data Science is the process of extracting knowledge and insights from structured and unstructured data using statistics, machine learning, and domain expertise.
+
+=== JOB ROLES IN DATA SCIENCE ===
+
+1. DATA ANALYST
+Role: Clean, analyze and visualize data to answer business questions.
+Skills: Excel, SQL, Python (Pandas, Matplotlib, Seaborn), Tableau, Power BI.
+Entry Salary: 4-10 LPA.
+Companies: Every company with data - banks, e-commerce, FMCG, healthcare.
+
+2. DATA SCIENTIST
+Role: Build predictive models, run experiments, extract deep insights.
+Skills: Python, R, Machine Learning (Scikit-learn), Statistics, SQL, feature engineering, A/B testing.
+Entry Salary: 6-18 LPA.
+Top Companies: Amazon, Flipkart, Walmart Labs, Mu Sigma, Fractal Analytics, LatentView, ThoughtWorks.
+
+3. MACHINE LEARNING ENGINEER
+Role: Build, optimize and deploy ML models into production systems.
+Skills: Python, TensorFlow, PyTorch, Scikit-learn, MLflow, Docker, FastAPI, Kubernetes, Spark.
+Entry Salary: 8-20 LPA.
+Top Companies: Google, Microsoft, Amazon, Swiggy, Zomato, Ola, PhonePe, CRED.
+
+4. AI ENGINEER
+Role: Develop AI-powered products and applications using LLMs, NLP, computer vision.
+Skills: LangChain, OpenAI API, Hugging Face, vector databases (ChromaDB, Pinecone), Python, RAG systems.
+Entry Salary: 10-25 LPA.
+Companies: Sarvam AI, Krutrim, Juspay, Postman, startups building AI products.
+
+5. DATA ENGINEER
+Role: Build data pipelines, data warehouses, ETL processes.
+Skills: Apache Spark, Kafka, Airflow, SQL, Python, AWS/GCP/Azure, dbt, Snowflake.
+Entry Salary: 7-18 LPA.
+Companies: Amazon, Swiggy, Meesho, Razorpay, large banks.
+
+6. NLP ENGINEER
+Role: Build systems that understand and generate human language.
+Skills: BERT, GPT, Transformers (Hugging Face), SpaCy, NLTK, Python, fine-tuning LLMs.
+Entry Salary: 8-20 LPA.
+
+7. COMPUTER VISION ENGINEER
+Role: Build systems that analyze images and video.
+Skills: OpenCV, YOLO, PyTorch, CNN, object detection, image segmentation, TensorRT for deployment.
+Entry Salary: 8-20 LPA.
+
+=== COMPLETE SKILLS ROADMAP ===
+
+PHASE 1 - FOUNDATION (2-3 months):
+- Python: variables, loops, functions, OOP, file handling.
+- Libraries: NumPy, Pandas, Matplotlib, Seaborn.
+- Mathematics: Statistics (mean, median, standard deviation, distributions), Probability, Linear Algebra, Calculus basics.
+- SQL: SELECT, JOIN, GROUP BY, subqueries, window functions.
+- Tools: Jupyter Notebook, Google Colab, VS Code.
+
+PHASE 2 - MACHINE LEARNING (3-4 months):
+- Supervised Learning: Linear Regression, Logistic Regression, Decision Trees, Random Forest, SVM, KNN, Gradient Boosting (XGBoost, LightGBM).
+- Unsupervised Learning: K-Means Clustering, DBSCAN, PCA, t-SNE.
+- Model Evaluation: Train-test split, Cross-validation, Confusion Matrix, Precision, Recall, F1-score, ROC-AUC.
+- Feature Engineering: Handling missing values, encoding, scaling, feature selection.
+- Library: Scikit-learn (master this completely).
+
+PHASE 3 - DEEP LEARNING (3-4 months):
+- Neural Networks: Perceptron, Multi-layer Perceptron, Backpropagation, Activation functions.
+- CNN (Convolutional Neural Networks): For image classification, object detection.
+- RNN / LSTM / GRU: For sequential data, time series.
+- Transformers: Self-attention, BERT, GPT architecture.
+- Frameworks: TensorFlow + Keras, PyTorch.
+
+PHASE 4 - SPECIALIZATION (3-6 months):
+Choose one:
+- NLP Track: Hugging Face Transformers, fine-tuning BERT, building LLM apps with LangChain.
+- Computer Vision Track: YOLO, Detectron2, image segmentation, OpenCV.
+- MLOps Track: MLflow, Docker, FastAPI, Kubernetes, CI/CD for ML.
+- Data Engineering Track: Apache Spark, Airflow, Kafka, dbt.
+
+=== PROJECTS TO BUILD (very important for getting jobs) ===
+
+Beginner Projects:
+1. Titanic Survival Prediction (Kaggle classic)
+2. House Price Prediction using Linear Regression
+3. Customer Churn Prediction for a telecom company
+4. Movie Recommendation System
+
+Intermediate Projects:
+5. Sentiment Analysis on Twitter or product reviews
+6. Credit Card Fraud Detection
+7. Stock Price Prediction using LSTM
+8. Image Classification using CNN (cats vs dogs)
+
+Advanced Projects:
+9. End-to-end ML pipeline deployed on AWS/GCP with CI/CD
+10. Build a RAG (Retrieval Augmented Generation) chatbot using LangChain
+11. Object detection system using YOLO
+12. Fine-tune a Hugging Face model for a custom task
+
+=== CERTIFICATIONS ===
+- Coursera: Machine Learning Specialization by Andrew Ng (most recommended, free to audit)
+- Coursera: Deep Learning Specialization by Andrew Ng
+- Google: Professional Data Engineer / Data Analyst Certificate
+- IBM: Data Science Professional Certificate
+- AWS: Machine Learning Specialty
+- Kaggle: Free micro-courses (Python, ML, Deep Learning, NLP, Computer Vision)
+
+=== INTERNSHIP PLATFORMS ===
+- Kaggle Competitions: Build profile and win competitions
+- Internshala: Data Science / ML internships
+- LinkedIn: Apply to data roles
+- AngelList: Startups with data teams
+- Unstop: ML hackathons and internships
+- Research Internships: Apply to professors at IITs for research positions
+
+=== TOP COMPANIES AND PACKAGES ===
+Tier 1 (highest): Google, Microsoft, Amazon, Meta - 20-50 LPA for freshers.
+Tier 2: Flipkart, Walmart, PhonePe, CRED, Razorpay - 12-25 LPA.
+Tier 3 Analytics: Mu Sigma, Fractal, LatentView, Tiger Analytics - 6-12 LPA.
+Tier 4 (service): TCS, Infosys, Wipro data teams - 4-8 LPA.

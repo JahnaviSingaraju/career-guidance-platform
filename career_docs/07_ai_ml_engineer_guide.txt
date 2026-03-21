@@ -1,0 +1,142 @@
+DOCUMENT: Artificial Intelligence and Machine Learning Engineering - Complete Career Guide
+
+=== AI/ML JOB ROLES AND DESCRIPTIONS ===
+
+1. MACHINE LEARNING ENGINEER
+Focus: Building, training, and deploying ML models at scale in production.
+Day-to-day: Write Python code to train models, optimize model performance, build APIs, monitor model drift.
+Must Know: Python, Scikit-learn, TensorFlow/PyTorch, Docker, REST APIs, SQL, cloud platforms.
+Salary India Fresher: 8-20 LPA.
+
+2. DEEP LEARNING ENGINEER
+Focus: Neural network architecture design and training for vision, NLP, audio tasks.
+Must Know: PyTorch (preferred), CNN, Transformer architecture, GPU programming, CUDA basics, model optimization.
+Salary India Fresher: 10-25 LPA.
+
+3. NLP ENGINEER / LLM ENGINEER
+Focus: Language understanding systems, chatbots, text classification, LLM fine-tuning, RAG systems.
+Must Know: Hugging Face Transformers, LangChain, LlamaIndex, prompt engineering, vector databases, fine-tuning BERT/Llama/Mistral.
+Salary India Fresher: 10-22 LPA.
+Hot skill in 2024-2025: Building RAG (Retrieval Augmented Generation) applications.
+
+4. COMPUTER VISION ENGINEER
+Focus: Image recognition, object detection, video analysis, autonomous systems.
+Must Know: OpenCV, YOLO (v8, v9), PyTorch, image preprocessing, model deployment on edge devices.
+Salary India Fresher: 8-20 LPA.
+
+5. MLOps ENGINEER
+Focus: CI/CD for ML models, model versioning, monitoring, infrastructure.
+Must Know: MLflow, Kubeflow, Docker, Kubernetes, Airflow, GitHub Actions, AWS SageMaker, GCP Vertex AI.
+Salary India Fresher: 8-18 LPA.
+
+6. AI RESEARCH SCIENTIST
+Focus: Publishing papers, developing new algorithms, advancing state-of-the-art.
+Requires: M.Tech or PhD from IIT/NIT/IISc or strong publication record.
+Companies: Google DeepMind, Microsoft Research, Meta AI, Samsung Research.
+Salary: 20-60 LPA.
+
+=== COMPLETE TECHNICAL SKILLS TO LEARN ===
+
+PYTHON MASTERY (non-negotiable):
+- Core Python: OOP, decorators, generators, context managers.
+- Scientific Python: NumPy, Pandas, Matplotlib, SciPy.
+- Web/API: FastAPI or Flask for deploying models.
+
+MATHEMATICS FOR ML:
+- Linear Algebra: Matrices, vectors, eigenvalues, SVD - used in PCA and transformers.
+- Calculus: Derivatives, chain rule, gradient descent understanding.
+- Probability and Statistics: Distributions, Bayes theorem, hypothesis testing, maximum likelihood.
+- These are tested in ML interviews at top companies.
+
+CLASSICAL MACHINE LEARNING:
+- Regression: Linear, Ridge, Lasso, Polynomial.
+- Classification: Logistic Regression, SVM, Decision Tree, Random Forest, XGBoost, LightGBM.
+- Clustering: K-Means, DBSCAN, Hierarchical.
+- Dimensionality Reduction: PCA, t-SNE, UMAP.
+- Model Selection: Cross-validation, hyperparameter tuning (GridSearch, Optuna).
+- Imbalanced Data: SMOTE, class weights.
+
+DEEP LEARNING:
+- Feedforward Neural Networks: Architecture, activation functions, batch normalization, dropout.
+- CNN: Convolution layers, pooling, famous architectures (ResNet, VGG, EfficientNet).
+- RNN/LSTM/GRU: Sequence modeling, time series forecasting.
+- Transformers: Self-attention mechanism, positional encoding, BERT, GPT.
+- Generative Models: VAE, GAN, Diffusion models (Stable Diffusion).
+
+FRAMEWORKS:
+- PyTorch: Most important for research and industry (2024-25). Learn DataLoader, custom datasets, training loops.
+- TensorFlow/Keras: Still widely used, especially for deployment.
+- Hugging Face: Fine-tuning and inference for NLP, Vision, Audio tasks.
+
+LLM AND GENERATIVE AI (hot skills 2024-25):
+- Prompt Engineering: Zero-shot, few-shot, chain-of-thought prompting.
+- RAG (Retrieval Augmented Generation): LangChain, LlamaIndex, ChromaDB, Pinecone.
+- LLM Fine-tuning: LoRA, QLoRA, full fine-tuning on custom datasets.
+- LLM APIs: OpenAI API, Groq, Anthropic Claude API, Google Gemini API.
+
+MLOPS AND DEPLOYMENT:
+- Model Serialization: Pickle, ONNX, TorchScript.
+- API Deployment: FastAPI + Uvicorn.
+- Containerization: Docker.
+- Cloud Deployment: AWS SageMaker, GCP Vertex AI, Azure ML, Hugging Face Spaces.
+- Experiment Tracking: MLflow, Weights & Biases.
+- Model Monitoring: Detecting data drift, performance degradation.
+
+DATA SKILLS:
+- SQL: Joins, window functions, CTEs - asked in almost every DS/ML interview.
+- Big Data: Spark (PySpark), Hive basics.
+- Data Versioning: DVC (Data Version Control).
+
+=== ML INTERVIEW PREPARATION ===
+
+Types of Interviews:
+1. Coding Round: DSA problems on LeetCode (easy to medium), SQL queries.
+2. ML Concepts Round: Theory questions on algorithms, math, statistics.
+3. ML Case Study / Take-Home: Build a model on a given dataset.
+4. System Design for ML: Design a recommendation system, fraud detection, search ranking.
+5. Behavioural Round: Tell me about your projects, challenges faced.
+
+Common ML Interview Questions:
+- Explain bias-variance tradeoff.
+- What is overfitting? How do you prevent it?
+- How does gradient descent work?
+- Explain the transformer architecture.
+- When do you use Random Forest vs XGBoost?
+- How would you handle class imbalance?
+- What is L1 vs L2 regularization?
+
+Resources for Interview Prep:
+- StatQuest with Josh Starmer (YouTube) for ML concepts.
+- Andrej Karpathy's makemore series for deep learning intuition.
+- LeetCode for coding rounds.
+- "Ace the Data Science Interview" book.
+
+=== PORTFOLIO BUILDING ===
+
+GitHub Portfolio (must have):
+- 8-10 repositories with clean README files.
+- At least 2-3 end-to-end projects (data collection to deployment).
+- Regular commits showing continuous learning.
+
+Kaggle Profile:
+- Compete in competitions to get rankings.
+- Notebook Expert or Competitions Expert rank is impressive.
+- Even top 20% in a competition is worth mentioning.
+
+Research Paper / Blog:
+- Write articles on Medium or Towards Data Science.
+- Even explaining a paper you read shows depth.
+
+=== TOP COMPANIES HIRING AI/ML IN INDIA ===
+
+Product Companies (highest pay):
+Google (Google Brain, DeepMind India), Microsoft (Research + Azure AI), Amazon (Alexa, AWS AI), Meta AI, Uber, Walmart.
+
+Indian Product Startups (growing fast):
+Swiggy, Zomato, Flipkart, Razorpay, CRED, PhonePe, Meesho, Dunzo, Sarvam AI, Krutrim, Yellow.ai, Observe.AI.
+
+Analytics Companies:
+Mu Sigma, Fractal Analytics, LatentView Analytics, Tiger Analytics, Absolutdata, EXL Analytics.
+
+Service Companies (volume hiring):
+TCS (AI division), Infosys (AI unit), Wipro (AI labs), HCL, Cognizant AI.

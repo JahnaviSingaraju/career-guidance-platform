@@ -1,0 +1,165 @@
+DOCUMENT: Cybersecurity - Complete Career and Skills Guide
+
+=== CYBERSECURITY JOB ROLES ===
+
+1. PENETRATION TESTER / ETHICAL HACKER
+Role: Legally hack systems to find vulnerabilities before malicious hackers do.
+Skills: Kali Linux, Metasploit, Burp Suite, Nmap, Python scripting, OWASP Top 10, network exploitation.
+Entry Salary: 5-15 LPA.
+Companies: KPMG Cyber, Deloitte Cyber, EY Cybersecurity, PwC, independent Bug Bounty.
+
+2. SOC ANALYST (Security Operations Centre)
+Role: Monitor networks and systems 24/7 for security threats and incidents.
+Skills: SIEM tools (Splunk, IBM QRadar), incident response, log analysis, firewall management, Windows/Linux.
+Entry Salary: 4-10 LPA.
+Companies: Every large company has a SOC. Banks, IT companies, telecom companies.
+
+3. SECURITY ENGINEER
+Role: Build and maintain security systems, firewalls, IDS/IPS systems.
+Skills: Networking (TCP/IP, DNS, HTTP, firewalls), security tools, Python, cloud security (AWS, Azure security services).
+Entry Salary: 6-15 LPA.
+
+4. MALWARE ANALYST / REVERSE ENGINEER
+Role: Analyze malicious software to understand how it works and how to counter it.
+Skills: Assembly language, reverse engineering tools (IDA Pro, Ghidra), Windows internals, sandbox analysis.
+Entry Salary: 8-18 LPA.
+
+5. VULNERABILITY RESEARCHER
+Role: Find zero-day vulnerabilities in software and hardware.
+Skills: Deep programming knowledge, fuzzing, binary exploitation, CVE research.
+Entry Salary: 10-25 LPA.
+
+6. CLOUD SECURITY ENGINEER
+Role: Secure cloud infrastructure on AWS, Azure, GCP.
+Skills: AWS IAM, Security Groups, VPC, AWS Security Hub, Azure Defender, compliance (ISO 27001, SOC 2).
+Entry Salary: 8-20 LPA.
+
+7. DIGITAL FORENSICS INVESTIGATOR
+Role: Investigate cyber crimes, recover digital evidence.
+Skills: Forensic tools (Autopsy, FTK), chain of custody, memory forensics, network forensics.
+Employers: Police Cybercrime Cells, CBI, CERT-In, private forensics firms.
+
+8. BUG BOUNTY HUNTER (FREELANCE)
+Role: Find vulnerabilities in company websites/apps and report for rewards.
+Platforms: HackerOne, Bugcrowd, Intigriti, Government bug bounty programs.
+Earning: Rs 50,000 to Rs 50,00,000 per valid vulnerability report.
+
+=== COMPLETE SKILLS ROADMAP ===
+
+PHASE 1 - FUNDAMENTALS (2-3 months):
+
+Networking (absolutely essential):
+- OSI Model: 7 layers and what happens at each.
+- TCP/IP: How packets travel across the internet.
+- Protocols: HTTP/HTTPS, DNS, DHCP, FTP, SSH, SMTP.
+- Subnetting: IP addressing, CIDR notation.
+- Tools: Wireshark (packet analysis), Nmap (port scanning).
+- Study: CompTIA Network+ material or TryHackMe "Pre-Security" path.
+
+Linux (essential for security):
+- File system navigation, permissions, process management.
+- Bash scripting: automate repetitive security tasks.
+- Common commands: ls, cd, cat, grep, find, chmod, chown, netstat, ps, ss.
+- Virtual Machine: Install Kali Linux on VirtualBox or VMware.
+
+Programming:
+- Python: Most important for security automation, exploit development, tool building.
+- Bash: For scripting on Linux systems.
+- Basic understanding of: C (for buffer overflows), JavaScript (for XSS understanding).
+
+PHASE 2 - CORE SECURITY CONCEPTS (3-4 months):
+
+Web Application Security:
+- OWASP Top 10: SQL Injection, XSS, CSRF, IDOR, SSRF, XXE, Broken Auth, etc.
+- Learn using: DVWA (Damn Vulnerable Web Application), WebGoat, HackTheBox Web challenges.
+- Tool: Burp Suite (intercept and modify HTTP requests).
+
+Network Security:
+- Scanning: Nmap for host discovery and port scanning.
+- Enumeration: Enumerate services, versions, OS.
+- Sniffing: Capture network traffic with Wireshark.
+- Attacks: ARP spoofing, Man-in-the-middle attacks.
+
+Exploitation:
+- Metasploit Framework: Use for known CVEs and exploits.
+- Reverse shells: How attackers get remote access.
+- Privilege Escalation: Linux privesc techniques (GTFOBins, misconfigured SUID).
+
+Cryptography:
+- Symmetric encryption: AES.
+- Asymmetric encryption: RSA.
+- Hashing: MD5, SHA-256, password hashing (bcrypt).
+- PKI: Certificates, TLS handshake.
+
+PHASE 3 - SPECIALIZATION (3-6 months):
+
+Penetration Testing Track:
+- Learn methodology: Reconnaissance -> Scanning -> Exploitation -> Post-Exploitation -> Reporting.
+- Tools: Nmap, Metasploit, Burp Suite, Nikto, SQLmap, Hydra, John the Ripper.
+- Practice: TryHackMe Offensive Path, HackTheBox machines, VulnHub VMs.
+- Certification Target: CEH (Certified Ethical Hacker) -> OSCP (gold standard).
+
+SOC Analyst Track:
+- Learn: Splunk SIEM, log analysis, threat hunting, incident response playbooks.
+- Certifications: CompTIA Security+, Splunk Core Certified User.
+- Practice: Blue Team Labs Online, TryHackMe SOC Level 1 path.
+
+Cloud Security Track:
+- Learn AWS security services: IAM, Security Groups, VPC, CloudTrail, GuardDuty, AWS Inspector.
+- Certifications: AWS Security Specialty, Certified Cloud Security Professional (CCSP).
+
+=== CERTIFICATIONS (in order of career stage) ===
+
+Beginner:
+- CompTIA Security+ - Industry standard entry level. Recognized globally. Cost: ~$400.
+- CEH (Certified Ethical Hacker) - EC-Council. Good for India job market. Cost: ~$500-1000.
+
+Intermediate:
+- OSCP (Offensive Security Certified Professional) - Hands-on 24-hour exam. Gold standard for pen testers. Highly respected. Cost: ~$1499.
+- CompTIA CySA+ - For SOC analysts.
+
+Advanced:
+- CISSP (Certified Information Systems Security Professional) - For managers and architects. Needs 5 years experience. Cost: ~$700.
+- CISM (Certified Information Security Manager).
+
+Free / Low-cost alternatives for beginners:
+- TryHackMe subscriptions (Rs 1200-1500/month).
+- Google Cybersecurity Certificate on Coursera.
+- IBM Cybersecurity Analyst Professional Certificate.
+
+=== FREE LEARNING RESOURCES ===
+
+Platforms:
+- TryHackMe.com: Best for beginners. Gamified, guided learning paths. Start with "Complete Beginner" or "Pre-Security" path.
+- HackTheBox.com: More challenging. For intermediate learners. "Starting Point" machines are beginner friendly.
+- PentesterLab.com: Web security focused exercises.
+- OWASP WebGoat: Deliberately vulnerable web app for learning web hacking.
+- PortSwigger Web Security Academy: FREE world-class web security training. Covers all OWASP topics.
+- Cybrary.it: Free video courses on security topics.
+
+YouTube Channels:
+- NetworkChuck: Networking and cybersecurity basics.
+- John Hammond: CTF walkthroughs and security concepts.
+- IppSec: HackTheBox machine walkthroughs.
+- The Cyber Mentor: Ethical hacking courses.
+- David Bombal: Networking and Cisco.
+
+CTF (Capture The Flag) Competitions:
+- PicoCTF: Beginner friendly, free.
+- CTFtime.org: Calendar of all ongoing CTF events.
+- Participating in CTFs is the best way to practice and build a portfolio.
+
+=== BUG BOUNTY PROGRAMS IN INDIA ===
+- HackerOne: International platform. Companies like Microsoft, Uber, Airbnb.
+- Bugcrowd: International. Variety of programs.
+- CERT-In (Indian CERT): Government bug bounty.
+- Individual company programs: Paytm, Ola, Flipkart, Razorpay have their own bug bounty programs.
+- Rewards in India: Rs 5,000 to Rs 5,00,000 per valid report depending on severity.
+
+=== SALARY RANGES IN INDIA ===
+SOC Analyst (fresher): 3-7 LPA.
+Security Engineer (fresher): 5-12 LPA.
+Penetration Tester (fresher): 4-10 LPA.
+Cloud Security Engineer: 8-20 LPA.
+Senior Security Architect (5+ years): 20-50 LPA.
+CISO (15+ years): 40-100+ LPA.

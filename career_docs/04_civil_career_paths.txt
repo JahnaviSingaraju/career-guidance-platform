@@ -1,0 +1,79 @@
+DOCUMENT: Civil Engineering - Complete Career Guide
+
+=== CAREER PATHS ===
+
+1. STRUCTURAL ENGINEER
+Role: Design and analyze load-bearing structures like buildings, bridges, dams.
+Skills Required: AutoCAD, STAAD Pro, ETABS, SAP2000, structural analysis, RCC design, steel design, IS codes.
+Top Companies: L&T Construction, Shapoorji Pallonji, TATA Projects, Gammon India, Hindustan Construction.
+Entry Salary: 3-10 LPA.
+Career Growth: Junior Engineer -> Design Engineer -> Senior Structural Engineer -> Consultant.
+
+2. GEOTECHNICAL ENGINEER
+Role: Study soil and rock behavior for foundations, tunnels, slopes.
+Skills Required: Soil mechanics, foundation engineering, rock mechanics, GeoStudio software, bore log analysis.
+Top Companies: AECOM, Jacobs, WSP, RITES, IRCON, NHAI, DMRC.
+Entry Salary: 4-10 LPA.
+
+3. TRANSPORTATION ENGINEER
+Role: Plan, design, and manage roads, highways, railways, airports.
+Skills Required: Highway design, traffic engineering, AutoCAD Civil 3D, transportation modeling (VISSIM), NHAI standards.
+Top Companies: NHAI (National Highways Authority of India), IRCON, L&T Infrastructure, GMR Group.
+Entry Salary: 4-10 LPA.
+Government Jobs: Junior Engineer in NHAI, PWD, CPWD through competitive exams.
+
+4. ENVIRONMENTAL ENGINEER
+Role: Solve environmental problems - water treatment, waste management, pollution control.
+Skills Required: Water treatment design, Environmental Impact Assessment (EIA), solid waste management, GIS, AutoCAD.
+Top Companies: CPCB (Central Pollution Control Board), EIL, AECOM Environmental, Ramky Enviro.
+Entry Salary: 4-10 LPA.
+
+5. CONSTRUCTION MANAGER / PROJECT MANAGER
+Role: Manage construction projects from planning to completion within time and budget.
+Skills Required: MS Project, Primavera P6, AutoCAD, Quantity Surveying, contract management, PERT/CPM.
+Top Companies: L&T, DLF, Sobha Developers, Brigade Group, Prestige Group, Godrej Properties.
+Entry Salary: 4-12 LPA.
+
+6. URBAN PLANNER
+Role: Plan and design cities, land use, zoning, public spaces.
+Skills Required: GIS (ArcGIS, QGIS), AutoCAD, urban design principles, demographic analysis, master plan preparation.
+Top Companies: HUDCO, Smart City Mission, State Town Planning Departments, Consulting firms.
+Entry Salary: 4-10 LPA.
+Higher Education: M. Plan from IIT/NIT or SPA (School of Planning and Architecture).
+
+7. WATER RESOURCES ENGINEER
+Role: Design water supply, irrigation systems, dams, reservoirs.
+Skills Required: Hydraulics, hydrology, SWMM software, irrigation engineering, dam design, HEC-RAS.
+Top Companies: CWC (Central Water Commission), NHPC, WAPCOS, Irrigation Departments.
+Entry Salary: 4-10 LPA.
+
+8. QUANTITY SURVEYOR / COST ESTIMATOR
+Role: Estimate construction costs, prepare bill of quantities, manage project budgets.
+Skills Required: AutoCAD, Microsoft Excel, Candy software, IS code knowledge, rate analysis.
+Top Companies: All large construction companies, real estate developers, PMC firms.
+Entry Salary: 3-8 LPA.
+
+=== GOVERNMENT JOBS FOR CIVIL ENGINEERS ===
+
+Through GATE: PSUs like BHEL, ONGC, GAIL, NTPC, NHPC hire civil engineers.
+Through SSC JE: Junior Engineer posts in CPWD, MES, Border Roads Organization.
+Through State PSC: State PWD (Public Works Department) junior engineer posts.
+Through UPSC: Engineering Services Examination (IES/ESE) for Group A positions.
+Railway Recruitment Board (RRB): Junior Engineer in Indian Railways.
+
+Salary: Government entry level 25,000-45,000/month with grade pay and allowances.
+
+=== INTERNSHIP OPPORTUNITIES ===
+
+Government: NHAI, CPWD, DMRC, Smart City Corporations, State PWDs.
+Private: L&T Construction, TATA Projects, NCC Limited, Shapoorji Pallonji.
+Stipend: 8,000-20,000/month.
+Duration: 2-6 months. Apply through college placement cell.
+
+=== SKILL ROADMAP ===
+
+Year 1-2: AutoCAD 2D, Engineering drawing, Concrete technology basics.
+Year 3: STAAD Pro for structural design, ETABS for building design.
+Year 4: Specialize - choose Structural / Geotechnical / Transportation / Environmental.
+Add-on: GIS knowledge is very valuable for urban planning and environmental roles.
+Certifications: AutoCAD Certified Professional, STAAD Pro certification.

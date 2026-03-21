@@ -1,0 +1,164 @@
+DOCUMENT: Software Engineering - Interview Preparation and Career Guide
+
+=== SOFTWARE ENGINEERING JOB ROLES ===
+
+1. SOFTWARE DEVELOPMENT ENGINEER (SDE)
+Role: Build features, fix bugs, design systems for software products.
+Levels: SDE-1 (fresher) -> SDE-2 (2-4 years) -> SDE-3 (5-8 years) -> Principal Engineer.
+Salary: SDE-1 at product companies 10-40 LPA. SDE-1 at service companies 3-8 LPA.
+
+2. BACKEND ENGINEER
+Skills: Node.js, Python (Django/FastAPI), Java (Spring Boot), Go, databases (PostgreSQL, MongoDB, Redis), REST APIs, microservices.
+Companies: Razorpay, PhonePe, Swiggy, CRED, Meesho, Postman.
+
+3. FRONTEND ENGINEER
+Skills: HTML, CSS, JavaScript, React.js, TypeScript, Next.js, performance optimization.
+Companies: Flipkart, Meesho, ShareChat, InMobi.
+
+4. FULL STACK ENGINEER
+Skills: Both frontend and backend. Most startups prefer full stack developers.
+Stack combinations: MERN (MongoDB, Express, React, Node), MEAN, Django + React, Spring + Angular.
+
+5. MOBILE DEVELOPER
+Android: Java/Kotlin, Android Studio.
+iOS: Swift, Xcode.
+Cross-platform: Flutter (Dart), React Native (JavaScript).
+Companies: Ola, Swiggy, MakeMyTrip, Paytm.
+
+6. SITE RELIABILITY ENGINEER (SRE)
+Role: Ensure reliability, performance, scalability of production systems.
+Skills: Linux, Python, monitoring tools (Prometheus, Grafana), incident management.
+Salary: 12-30 LPA.
+
+=== DSA (DATA STRUCTURES AND ALGORITHMS) PREPARATION ===
+
+WHY DSA MATTERS: All product companies (Google, Microsoft, Amazon, Flipkart) test DSA in their hiring process. You need it for SDE interviews.
+
+TOPICS TO MASTER:
+
+Arrays and Strings:
+- Two pointer technique, sliding window, kadane's algorithm, string manipulation.
+- LeetCode problems to solve: 50-100 problems.
+
+Linked Lists:
+- Singly, doubly, circular. Reverse, detect cycle, find middle.
+- LeetCode problems: 20-30 problems.
+
+Stacks and Queues:
+- Monotonic stack, deque, implement using arrays/linked lists.
+- Applications: Valid parentheses, next greater element.
+
+Trees:
+- Binary tree, BST, AVL tree, segment tree, trie.
+- Traversals: Inorder, preorder, postorder, level order.
+- Operations: Height, diameter, LCA, path sum, serialize/deserialize.
+- LeetCode problems: 50-60 problems.
+
+Graphs:
+- Representation: Adjacency matrix, adjacency list.
+- Algorithms: BFS, DFS, Dijkstra, Bellman-Ford, Floyd-Warshall, Kruskal, Prim.
+- Problems: Shortest path, cycle detection, topological sort, bipartite check, connected components.
+- LeetCode problems: 40-50 problems.
+
+Dynamic Programming:
+- Patterns: 0/1 knapsack, unbounded knapsack, LCS, LIS, matrix chain.
+- Must-do problems: Fibonacci, climbing stairs, coin change, longest common subsequence, edit distance, 0/1 knapsack, rod cutting.
+- This is the hardest topic - spend extra time here.
+- LeetCode problems: 50-80 problems.
+
+Searching and Sorting:
+- Binary search and its variants (on answer, on ranges).
+- Merge sort, quick sort (understand time/space complexity).
+- LeetCode problems: 20-30 problems.
+
+Heaps and Priority Queues:
+- Min heap, max heap, heap sort.
+- Top K elements pattern, merge K sorted arrays.
+
+Backtracking:
+- Generate subsets, permutations, N-queens, sudoku solver.
+
+Greedy:
+- Activity selection, fractional knapsack, Huffman encoding.
+
+Hashing:
+- HashMap, HashSet applications in DSA.
+- Two sum, anagram check, subarray with given sum.
+
+BIT MANIPULATION:
+- AND, OR, XOR, left/right shift.
+- Common tricks: Check if number is power of 2, count set bits.
+
+=== PRACTICE PLAN ===
+
+3-Month DSA Plan:
+Month 1: Arrays, Strings, Linked Lists, Stacks, Queues (100 problems on LeetCode easy/medium).
+Month 2: Trees, Graphs, Heap (80 problems, mostly medium).
+Month 3: DP, Backtracking, Greedy, Revision (80 problems, medium/hard).
+
+Daily Routine:
+- Solve 2-3 LeetCode problems every day minimum.
+- Participate in LeetCode weekly contests (every Sunday).
+- Read editorial of problems you couldn't solve.
+
+LeetCode Study Lists:
+- LeetCode 75 (curated list, great starting point).
+- Blind 75 (famous list for FAANG preparation).
+- NeetCode 150 (organized by topic).
+
+Other Platforms:
+- Codeforces: Competitive programming, builds speed and problem-solving instinct.
+- InterviewBit: Structured curriculum for placement prep.
+- GeeksforGeeks: Theory explanations + practice problems.
+
+=== SYSTEM DESIGN (for SDE-2 and above) ===
+
+Topics to Study:
+- Horizontal vs Vertical Scaling.
+- Load Balancers (Nginx, AWS ELB).
+- Caching: Redis, Memcached, CDN.
+- Database Design: SQL vs NoSQL, sharding, replication, indexing.
+- Message Queues: Kafka, RabbitMQ.
+- Microservices vs Monolith.
+- CAP theorem, eventual consistency.
+- API Design: REST vs GraphQL vs gRPC.
+
+Common System Design Questions:
+- Design a URL shortener (like bit.ly).
+- Design Twitter/Instagram feed.
+- Design a WhatsApp messaging system.
+- Design a ride-sharing system like Ola.
+- Design a payment system like Razorpay.
+- Design Netflix video streaming.
+
+Resources:
+- "Designing Data-Intensive Applications" book by Martin Kleppmann (must read).
+- System Design Primer on GitHub.
+- YouTube: Gaurav Sen, TechDummies, ByteByteGo channels.
+
+=== RESUME FOR SOFTWARE ENGINEERING ===
+
+Format: Clean, single page, no photos, no fancy design.
+Order: Contact -> Education -> Skills -> Experience/Internships -> Projects -> Certifications.
+
+Projects section (most important for freshers):
+- Name of project.
+- Tech stack used (Python, React, Node, MongoDB, etc.).
+- What problem it solves (1 line).
+- Key technical achievement (quantified if possible).
+- GitHub link.
+
+Skills Section Format:
+Languages: Python, Java, C++, JavaScript.
+Web: React, Node.js, Express, HTML/CSS.
+Databases: PostgreSQL, MongoDB, Redis.
+Tools: Git, Docker, AWS (basics).
+
+=== PLACEMENT TIMELINE FOR B.TECH STUDENTS ===
+
+5th Semester: Start DSA preparation seriously.
+6th Semester: Apply for summer internships (May-June). Target 50+ applications.
+7th Semester: Off-campus applications, online tests, placement drives start.
+8th Semester: Final placements in college (most companies visit August-November).
+
+Key Tip: Companies like TCS, Infosys, Wipro (mass recruiters) test aptitude + basic coding. Product companies test DSA heavily.
