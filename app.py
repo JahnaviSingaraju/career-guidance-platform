@@ -514,7 +514,6 @@ if "rag" not in st.session_state:
     st.session_state["rag"] = CareerGuidanceRAG()
 rag = st.session_state["rag"]
 
-
 def run_query(query: str):
     if rag.get_doc_count() == 0:
         st.warning("⚠️ Please click **Load Career Documents** in the sidebar first!")
