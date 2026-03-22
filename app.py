@@ -510,15 +510,21 @@ html, body, [class*="css"] { font-family: 'Sora', sans-serif; }
 """, unsafe_allow_html=True)
 
 ## ── Init RAG with caching (optimized) ──────────────────
-@st.cache_resource
-def load_rag():
-    return CareerGuidanceRAG()
+st.title("AI Career Guidance Platform")
 
-if "rag" not in st.session_state:
-    with st.spinner("Loading AI model..."):
-        st.session_state["rag"] = load_rag()
+# 👇 input box
+query = st.text_input("Ask your question:")
 
-rag = st.session_state["rag"]
+# 👇 ONLY load RAG when user asks
+if query:
+    if "rag" not in st.session_state:
+        with st.spinner("Loading AI model..."):
+            st.session_state["rag"] = CareerGuidanceRAG()
+
+    with st.spinner("Thinking..."):
+        response = st.session_state["rag"].get_answer(query)
+
+    st.write(response)
 
 def run_query(query: str):
     if rag.get_doc_count() == 0:
