@@ -258,7 +258,7 @@ class CareerGuidanceRAG:
         )
         return {**state, "resume_context": results["documents"][0], "has_resume": True}
 
-    # ── Node 5: Generate ──────────────────────
+
 
     # ── Node 5: Generate ──────────────────────
 
@@ -509,11 +509,16 @@ html, body, [class*="css"] { font-family: 'Sora', sans-serif; }
 </style>
 """, unsafe_allow_html=True)
 
-# ── Init RAG once per session ──────────────────
-if "rag" not in st.session_state:
-    st.session_state["rag"] = CareerGuidanceRAG()
-rag = st.session_state["rag"]
+## ── Init RAG with caching (optimized) ──────────────────
+@st.cache_resource
+def load_rag():
+    return CareerGuidanceRAG()
 
+if "rag" not in st.session_state:
+    with st.spinner("Loading AI model..."):
+        st.session_state["rag"] = load_rag()
+
+rag = st.session_state["rag"]
 
 def run_query(query: str):
     if rag.get_doc_count() == 0:
