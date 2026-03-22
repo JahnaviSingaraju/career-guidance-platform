@@ -509,21 +509,10 @@ html, body, [class*="css"] { font-family: 'Sora', sans-serif; }
 </style>
 """, unsafe_allow_html=True)
 
-# Step 1: No heavy loading at top
-rag = None
-if "rag" in st.session_state:
-    rag = st.session_state["rag"]
-
-# Step 3: Load only when needed
-if query:
-    if "rag" not in st.session_state:
-        with st.spinner("Loading AI model..."):
-            st.session_state["rag"] = CareerGuidanceRAG()
-
-    rag = st.session_state["rag"]
-
-    response = rag.get_answer(query)
-    st.write(response)
+# ── Init RAG once per session ──────────────────
+if "rag" not in st.session_state:
+    st.session_state["rag"] = CareerGuidanceRAG()
+rag = st.session_state["rag"]
 
 
 def run_query(query: str):
