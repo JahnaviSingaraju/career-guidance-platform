@@ -30,9 +30,7 @@ class AgentState(TypedDict):
     has_resume:     bool
 
 # RAG PIPELINE WITH LANGGRAPH + ReAct AGENT
-
 class CareerGuidanceRAG:
-
     def __init__(self):
         os.environ["GROQ_API_KEY"] = GROQ_API_KEY
         self.llm = ChatGroq(temperature=0, model_name=MODEL_NAME)
@@ -40,17 +38,12 @@ class CareerGuidanceRAG:
         self.collection        = self.chroma_client.get_or_create_collection("career_knowledge_base")
         self.resume_collection = self.chroma_client.get_or_create_collection("student_resume")
         self.splitter = RecursiveCharacterTextSplitter(chunk_size=800, chunk_overlap=100)
-
         # Build LangGraph pipeline
         self.graph = self._build_graph()
-
         # Build ReAct Agent with tools
         self.react_agent = self._build_react_agent()
 
-    # ─────────────────────────────────────────
     # REACT AGENT
-    # ─────────────────────────────────────────
-
     def _build_react_agent(self):
         """
         ReAct Agent with 4 tools:
@@ -59,9 +52,7 @@ class CareerGuidanceRAG:
           - classify_question: detect query type
           - get_final_advice: generate final answer
         """
-
         rag_ref = self  # reference to self for use inside tools
-
         @tool
         def search_career_knowledge(query: str) -> str:
             """Search the career knowledge base for relevant information about
@@ -75,7 +66,6 @@ class CareerGuidanceRAG:
             )
             docs = results["documents"][0]
             return "\n\n---\n\n".join(docs[:3])
-
         @tool
         def get_resume_info(query: str) -> str:
             """Retrieve relevant information from the student's uploaded resume.
@@ -88,7 +78,6 @@ class CareerGuidanceRAG:
                 n_results=min(3, count)
             )
             return "\n\n".join(results["documents"][0])
-
         @tool
         def classify_question(query: str) -> str:
             """Classify the student's question into one of these types:
@@ -106,26 +95,20 @@ class CareerGuidanceRAG:
             elif any(w in q for w in ["job", "career", "salary", "company", "placement"]):
                 return "career"
             return "general"
-
         @tool
         def get_final_advice(context: str) -> str:
             """Use this tool LAST to format and return the final career advice
             after gathering all necessary context from other tools."""
             return context
-
         tools = [
             search_career_knowledge,
             get_resume_info,
             classify_question,
             get_final_advice,
         ]
-
         return create_react_agent(self.llm, tools)
 
-    # ─────────────────────────────────────────
     # LANGGRAPH PIPELINE
-    # ─────────────────────────────────────────
-
     def _build_graph(self):
         builder = StateGraph(AgentState)
         builder.add_node("classify_query", self._node_classify)
@@ -141,11 +124,9 @@ class CareerGuidanceRAG:
         builder.add_edge("generate",       END)
         return builder.compile()
 
-    # ── Node 1: Classify ──────────────────────
-
+    #Node 1: Classify
     def _node_classify(self, state: AgentState) -> AgentState:
         query = state["user_query"].lower()
-
         # Detect branch
         branch_map = {
             "ece":        ["ece", "electronics", "communication", "vlsi", "embedded", "iot", "signal"],
@@ -161,7 +142,6 @@ class CareerGuidanceRAG:
             if any(k in query for k in keywords):
                 detected_branch = branch
                 break
-
         # Detect query type
         if any(w in query for w in ["internship", "intern", "drdo", "isro", "stipend", "internshala"]):
             query_type = "internship"
@@ -178,22 +158,18 @@ class CareerGuidanceRAG:
 
         return {**state, "query_type": query_type, "branch": detected_branch}
 
-    # ── Node 2: Retrieve ──────────────────────
-
+    #Node 2: Retrieve
     def _node_retrieve(self, state: AgentState) -> AgentState:
         query  = state["user_query"]
         branch = state.get("branch")
         total  = self.collection.count()
         if total == 0:
             return {**state, "retrieved_docs": []}
-
         # Enrich query with branch name so vector search targets right docs
         enriched_query = f"{branch} {query}" if branch else query
-
         n           = min(10, total)
         results     = self.collection.query(query_texts=[enriched_query], n_results=n)
         vector_docs = results["documents"][0]
-
         # Branch-specific keyword filter — only keep docs mentioning the branch
         branch_keywords = {
             "ece":        ["ece", "electronics", "vlsi", "embedded", "iot", "microcontroller", "signal", "rf", "robotics"],
@@ -204,7 +180,6 @@ class CareerGuidanceRAG:
             "chemical":   ["chemical", "process", "petroleum", "pharma", "refinery"],
             "it":         ["information technology", "it ", "software"],
         }
-
         if branch and branch in branch_keywords:
             bkeys = branch_keywords[branch]
             # Priority: docs that mention the branch first
@@ -220,11 +195,9 @@ class CareerGuidanceRAG:
             keywords     = [k for k in query.lower().split() if len(k) > 3]
             keyword_docs = [d for d in vector_docs if any(k in d.lower() for k in keywords)]
             hybrid = list(dict.fromkeys(keyword_docs + vector_docs))[:10]
-
         return {**state, "retrieved_docs": hybrid}
 
-    # ── Node 3: Rerank ────────────────────────
-
+    # Node 3: Rerank
     def _node_rerank(self, state: AgentState) -> AgentState:
         docs  = state.get("retrieved_docs", [])
         query = state["user_query"]
@@ -246,8 +219,7 @@ class CareerGuidanceRAG:
             reranked = docs[:3]
         return {**state, "reranked_docs": reranked}
 
-    # ── Node 4: Personalize ───────────────────
-
+    #Node 4: Personalize 
     def _node_personalize(self, state: AgentState) -> AgentState:
         query        = state["user_query"]
         resume_count = self.resume_collection.count()
@@ -258,10 +230,7 @@ class CareerGuidanceRAG:
         )
         return {**state, "resume_context": results["documents"][0], "has_resume": True}
 
-
-
-    # ── Node 5: Generate ──────────────────────
-
+    #  Node 5: Generate
     def _node_generate(self, state: AgentState) -> AgentState:
         query      = state["user_query"]
         reranked   = state.get("reranked_docs", [])
@@ -269,10 +238,8 @@ class CareerGuidanceRAG:
         query_type = state.get("query_type", "general")
         has_resume = state.get("has_resume", False)
         resume_ctx = state.get("resume_context", [])
-
         if not reranked or not context.strip():
             return {**state, "final_answer": "❌ This question is not related to career guidance."}
-
         query_keywords = [k for k in query.lower().split() if len(k) > 3]
         relevance_score = sum(1 for k in query_keywords if k in context.lower())
         career_keywords = [
@@ -286,17 +253,14 @@ class CareerGuidanceRAG:
             "which", "recommend", "suggest", "prepare", "apply", "how to", "what are"
         ]
         career_score = sum(1 for k in career_keywords if k in query.lower())
-
         if relevance_score == 0 and career_score == 0:
             return {**state, "final_answer": "❌ This question is not related to career guidance."}
-
         if has_resume:
             resume_text  = " ".join(resume_ctx).lower()
             query_words  = [k for k in query.lower().split() if len(k) > 3]
             resume_match = sum(1 for w in query_words if w in resume_text)
             if career_score == 0 and resume_match == 0:
                 return {**state, "final_answer": "❌ This question is not related to career guidance."}
-
             prompt = PromptTemplate.from_template(
                 "You are an expert AI Career Guidance Counselor for engineering students in India.\n\n"
                 "Student Profile (from resume):\n{resume}\n\n"
@@ -318,7 +282,6 @@ class CareerGuidanceRAG:
             })
             if "NOT_CAREER_RELATED" in advice.content:
                 return {**state, "final_answer": "❌ This question is not related to career guidance."}
-
         else:
             prompt = PromptTemplate.from_template(
                 "You are an expert AI Career Guidance Counselor for engineering students in India.\n\n"
@@ -340,13 +303,9 @@ class CareerGuidanceRAG:
             })
             if "NOT_CAREER_RELATED" in advice.content:
                 return {**state, "final_answer": "❌ This question is not related to career guidance."}
-
         return {**state, "final_answer": advice.content}
 
-    # ─────────────────────────────────────────
     # PUBLIC QUERY — ReAct decides, LangGraph executes
-    # ─────────────────────────────────────────
-
     def query(self, user_query: str) -> Dict[str, Any]:
         if self.collection.count() == 0:
             return {
@@ -355,7 +314,6 @@ class CareerGuidanceRAG:
                 "has_resume":  False,
                 "react_steps": []
             }
-
         # ── Step 1: ReAct Agent reasons and decides what to retrieve ──
         react_prompt = (
             f"A student asked: '{user_query}'\n\n"
@@ -366,10 +324,8 @@ class CareerGuidanceRAG:
             f"4. Summarize all gathered context as the final answer input\n\n"
             f"Think step by step before answering."
         )
-
         react_steps = []
         react_context = ""
-
         try:
             react_result = self.react_agent.invoke(
                 {"messages": [{"role": "user", "content": react_prompt}]}
@@ -407,10 +363,7 @@ class CareerGuidanceRAG:
             "react_steps": react_steps,
         }
 
-    # ─────────────────────────────────────────
     # DOCUMENT LOADING
-    # ─────────────────────────────────────────
-
     def load_career_docs_folder(self) -> int:
         folder_path = os.path.join(os.path.dirname(__file__), DOCS_FOLDER)
         txt_files   = sorted(glob.glob(os.path.join(folder_path, "*.txt")))
@@ -428,10 +381,7 @@ class CareerGuidanceRAG:
         self.collection.add(documents=all_chunks, ids=all_ids)
         return len(all_chunks)
 
-    # ─────────────────────────────────────────
     # RESUME MANAGEMENT
-    # ─────────────────────────────────────────
-
     def load_resume(self, file) -> int:
         self.clear_resume()
         if file.name.endswith(".pdf"):
@@ -450,29 +400,22 @@ class CareerGuidanceRAG:
             ids=[f"resume_{i}" for i in range(len(chunks))]
         )
         return len(chunks)
-
     def clear_resume(self):
         existing = self.resume_collection.get()
         if existing and existing["ids"]:
             self.resume_collection.delete(ids=existing["ids"])
-
     def has_resume(self) -> bool:
         return self.resume_collection.count() > 0
-
     def get_doc_count(self) -> int:
         return self.collection.count()
 
-
-# ─────────────────────────────────────────────
 # STREAMLIT UI
-# ─────────────────────────────────────────────
 st.set_page_config(
     page_title="AI Career Guidance Platform",
     page_icon="🎯",
     layout="wide",
     initial_sidebar_state="expanded"
 )
-
 st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&display=swap');
@@ -518,12 +461,9 @@ def run_query(query: str):
     if rag.get_doc_count() == 0:
         st.warning("⚠️ Please click **Load Career Documents** in the sidebar first!")
         return
-
-    with st.spinner("ReAct Agent thinking + LangGraph pipeline running..."):
+    with st.spinner("Running..."):
         result = rag.query(query)
-
     st.session_state["query_count"] = st.session_state.get("query_count", 0) + 1
-
     # Query type badge
     qtype = result.get("query_type", "general")
     qtype_labels = {
@@ -548,13 +488,10 @@ def run_query(query: str):
         unsafe_allow_html=True
     )
 
-
 # ── Sidebar ────────────────────────────────────
 with st.sidebar:
-
     # 1. Resume upload
     st.markdown("### 👤 Student Resume")
-   
     resume_file = st.file_uploader(
         "Upload resume", type=["pdf", "txt"], accept_multiple_files=False
     )
@@ -569,7 +506,6 @@ with st.sidebar:
             else:
                 st.session_state[file_key] = True
                 st.success(f"✅ Resume loaded ({chunks} chunks)")
-
     if rag.has_resume():
         st.markdown(
             "<span class='resume-badge'>✅ Resume active — answers will be personalized</span>",
@@ -580,11 +516,8 @@ with st.sidebar:
             for k in [k for k in st.session_state if k.startswith("resume_loaded_")]:
                 del st.session_state[k]
             st.rerun()
-
     st.divider()
-
     # 2. Load career docs
-    
     if st.button("📚 Load Career Documents"):
         with st.spinner("Loading..."):
             count = rag.load_career_docs_folder()
@@ -592,27 +525,21 @@ with st.sidebar:
             st.success(f"✅ {count} chunks loaded from 15 documents!")
         else:
             st.error("❌ career_docs/ folder not found next to app.py")
-
     st.divider()
-
     # 3. Stats
     st.markdown("### 📊 Stats")
     c1, c2 = st.columns(2)
     c1.metric("Chunks", rag.get_doc_count())
     c2.metric("Queries", st.session_state.get("query_count", 0))
 
-
 # ── Main UI ────────────────────────────────────
 st.markdown("""
 <div class='main-header'>
     <h1 style='margin:0; font-size:2.2rem;'>🎯 AI Career Guidance Platform</h1>
- 
 </div>
 """, unsafe_allow_html=True)
-
 st.markdown("### 🚀 Quick Questions")
 st.caption("Click any question for an instant answer")
-
 quick_questions = [
     "Career paths for CSE students?",
     "Best internships for ECE students?",
@@ -627,21 +554,17 @@ quick_questions = [
     "Best free courses for programming?",
     "How to write a good resume?",
 ]
-
 cols = st.columns(3)
 for i, q in enumerate(quick_questions):
     if cols[i % 3].button(q, key=f"quick_{i}"):
         st.session_state["active_query"] = q
-
 st.divider()
-
 user_input = st.text_input(
     "Or type your own question:",
     placeholder="e.g. What skills do I need for ML jobs as a CSE student?"
 )
 if st.button("🎯 Get Advice") and user_input.strip():
     st.session_state["active_query"] = user_input.strip()
-
 if st.session_state.get("active_query"):
     query = st.session_state["active_query"]
     st.markdown(f"**Your question:** _{query}_")
